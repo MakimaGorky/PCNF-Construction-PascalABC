@@ -347,7 +347,7 @@ begin
         //Println(inc1,inc2,lvar[inc1],Inc2 mod (Floor(Power(2,inc1+1))),Floor(Power(2,inc1)));
       end;
   
-  //Println(lvar);
+  //Println(lvar); //да, кстати я хз как делать нормальный дебагинг в паскале
   //Println('///////////////////////');
   Println($'Таким образом имеем для вас:');
   //Println(cin);
@@ -448,7 +448,7 @@ begin
   
   var cout:=pcnf(logout,warnames);
   if cout='' then 
-    Println('Скнф не существует')
+    Println('Скнф не существует (＞ｍ＜)')
   else
     Println(cout);
   
