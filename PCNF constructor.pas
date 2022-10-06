@@ -393,12 +393,12 @@ begin
         tp2 := stuck.Pop;
         tp1 := stuck.Pop;
         case cin[i] of
-         '+','∨' : begin
+         '+','∨','|' : begin
                      var tp:array of boolean;
                      tp:=binor(tp1,tp2,numofwars);
                      stuck.Push(tp);
                    end;
-         '&','∧' : begin
+         '&','∧','*' : begin
                      var tp:array of boolean;
                      tp:=binand(tp1,tp2,numofwars);
                      stuck.Push(tp);
