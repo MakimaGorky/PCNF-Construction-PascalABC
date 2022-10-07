@@ -6,7 +6,7 @@
   по-моему и без того вышло здоровски!
   
   тестовые наборы
-  ((((A>B)>!A)>!B)>!C) -> (A+B+!C)&(!A+B+!C)&(!A+!B+!C)   a+b+c+d+e+f+g+h+i+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z
+  ((((A>B)>!A)>!B)>!C) -> (A+B+!C)&(!A+B+!C)&(!A+!B+!C)   a+b+c+d+e+f+g+h+i+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z или a&b&c&d&e&f&g&h&i&j&k&l&m&n&o&p*q&r*s*t&u*v&w*x&y*z
 }
         type
           logvar = record
@@ -288,6 +288,9 @@
 //непосредственно непосредственная программа
 
 begin
+    
+    Milliseconds;
+
     // немного приукрасил, но скнф же далает!
   println($'Данная программа делает скнф/кнф; сднф/днф для дополнительной информации - наберите help');
   println;
@@ -453,6 +456,8 @@ begin
     Println('Скнф не существует (＞ｍ＜)')
   else
     Println(cout);
+  
+  MillisecondsDelta.Print;
   
   var s:='';
   Read(s);
